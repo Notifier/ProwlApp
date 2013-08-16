@@ -87,8 +87,8 @@ class ProwlAppHandler extends AbstractHandler
     /**
      * Build a prowl message.
      *
-     * @param MessageInterface $message
-     * @param RecipientInterface $recipient
+     * @param  MessageInterface   $message
+     * @param  RecipientInterface $recipient
      * @return Message
      */
     protected function buildMessage(MessageInterface $message, RecipientInterface $recipient)
@@ -109,7 +109,7 @@ class ProwlAppHandler extends AbstractHandler
     /**
      * Send the message.
      *
-     * @param Message $message
+     * @param  Message         $message
      * @return \Prowl\Response
      */
     protected function push(Message $message)

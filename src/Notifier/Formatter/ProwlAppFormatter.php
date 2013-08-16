@@ -24,7 +24,7 @@ class ProwlAppFormatter implements FormatterInterface
             array(
                 'subject' => $message->getSubject(),
                 'content' => $message->getContent(),
-				'priority' => 0,
+                'priority' => 0,
             )
         );
 
