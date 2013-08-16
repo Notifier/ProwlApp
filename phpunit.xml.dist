@@ -6,4 +6,8 @@
             <directory>tests</directory>
         </testsuite>
     </testsuites>
+
+    <php>
+        <env name="PROWLAPP_APIKEY" value=""/>
+    </php>
 </phpunit>
