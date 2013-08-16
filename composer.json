@@ -14,7 +14,8 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "notifier/notifier": "1.0.*@dev"
+        "notifier/notifier": "1.0.*@dev",
+        "xenji/ProwlPHP": "1.0.3"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*@dev"
