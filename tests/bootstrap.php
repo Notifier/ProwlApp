@@ -10,3 +10,4 @@
 
 $loader = require_once __DIR__ . "/../vendor/autoload.php";
 $loader->add('Notifier', __DIR__);
+$loader->add('Notifier', dirname(__DIR__).'/vendor/notifier/notifier/tests');

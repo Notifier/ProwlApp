@@ -18,7 +18,7 @@ use Prowl\Response;
 /**
  * @author Dries De Peuter <dries@nousefreak.be>
  */
-class HandlerTest extends \PHPUnit_Framework_TestCase
+class HandlerTest extends AbstractHandlerTest
 {
     /**
      * @var Notifier
@@ -36,6 +36,15 @@ class HandlerTest extends \PHPUnit_Framework_TestCase
         $this->notifier = new Notifier();
         $this->apiKey = getenv('PROWLAPP_APIKEY');
     }
+
+    /**
+     * @return HandlerInterface
+     */
+    protected function getHandler()
+    {
+        return new ProwlAppHandler();
+    }
+
 
     public function tearDown()
     {
